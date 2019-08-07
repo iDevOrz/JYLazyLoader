@@ -25,7 +25,7 @@ fileprivate let languageUTIs: [CFString: Language] = [
 class Runtime {
     private init() {
         if let path = Bundle.main.path(forResource: "LazyLoadTemp", ofType: "plist"), let dict = NSDictionary(contentsOfFile: path) as? [String: String] {
-           lazyLoadStringTemp = dict
+            lazyLoadStringTemp = dict
         }else{
             lazyLoadStringTemp = [String:String]()
         }
