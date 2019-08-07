@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIImageView</key>
+	<string>-(UIImageView *)propertyName{
+    if (_propertyName == nil) {
+//        _propertyName = [UIImageView new];
+        _propertyName = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@&quot;&lt;#ImageName#&gt;&quot;]];
+        _propertyName.layer.cornerRadius = &lt;#50.f#&gt;;
+    }
+    return _propertyName;
+}</string>
+	<key>UIButton</key>
+	<string>- (UIButton *)propertyName{
+    if (_propertyName == nil) {
+        _propertyName = [UIButton buttonWithType:UIButtonTypeCustom];
+//        [_propertyName setTitle:@&quot;&lt;#ButtonTitle#&gt;&quot; forState:UIControlStateNormal];
+//        [_propertyName setTitleColor:&lt;#[UIColor redColor]#&gt; forState:UIControlStateNormal];
+//
+//        [_propertyName setImage:[UIImage imageNamed:@&quot;&lt;#NormalImageName#&gt;&quot;] forState:UIControlStateNormal];
+//        [_propertyName setImage:[UIImage imageNamed:@&quot;&lt;#SelectedImageName#&gt;&quot;] forState:UIControlStateSelected];
+//        _propertyName.backgroundColor = &lt;#[UIColor redColor]#&gt;;
+//        _propertyName.layer.cornerRadius = 26.f;
+    }
+    return _propertyName;
+}</string>
+	<key>UILabel</key>
+	<string>- (UILabel *)propertyName{
+    if (_propertyName == nil) {
+        _propertyName = [UILabel new];
+//        _propertyName.text = @&quot;&lt;#labelText#&gt;&quot;;
+//        _propertyName.textColor = &lt;#[UIColor redColor]#&gt;;
+//        _propertyName.font = [UIFont systemFontOfSize:&lt;#17#&gt;];
+//        _propertyName.numberOfLines = &lt;#0#&gt;;
+    }
+    return _propertyName;
+}</string>
+</dict>
+</plist>
