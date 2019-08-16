@@ -79,7 +79,7 @@ class Runtime {
         
         
         let otherTempString = #"""
-                        -(ClassName *)propertyName{
+                        - (ClassName *)propertyName {
                             if (_propertyName == nil) {
                                 _propertyName = [ClassName new];
                             }
