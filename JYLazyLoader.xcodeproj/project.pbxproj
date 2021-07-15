@@ -17,6 +17,8 @@
 		58CE1B9122F5693300D8148F /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CE1B9022F5693300D8148F /* Runtime.swift */; };
 		58CE1B9C22F5C3C100D8148F /* LazyLoadTemp.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58CE1B9B22F5C3C100D8148F /* LazyLoadTemp.plist */; };
 		58CE1B9D22F5C3C100D8148F /* LazyLoadTemp.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58CE1B9B22F5C3C100D8148F /* LazyLoadTemp.plist */; };
+		7650C4AE26A086FA00E4BC3B /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7650C4AD26A086FA00E4BC3B /* XcodeKit.framework */; };
+		7650C4AF26A086FA00E4BC3B /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7650C4AD26A086FA00E4BC3B /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,17 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7650C4B026A086FA00E4BC3B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7650C4AF26A086FA00E4BC3B /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +71,7 @@
 		58A0145A22F42C7C006AF493 /* LazyLoad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LazyLoad.entitlements; sourceTree = "<group>"; };
 		58CE1B9022F5693300D8148F /* Runtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runtime.swift; sourceTree = "<group>"; };
 		58CE1B9B22F5C3C100D8148F /* LazyLoadTemp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LazyLoadTemp.plist; sourceTree = "<group>"; };
+		7650C4AD26A086FA00E4BC3B /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58A0145322F42C7C006AF493 /* Cocoa.framework in Frameworks */,
+				7650C4AE26A086FA00E4BC3B /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +129,7 @@
 		58A0145122F42C7C006AF493 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7650C4AD26A086FA00E4BC3B /* XcodeKit.framework */,
 				58A0145222F42C7C006AF493 /* Cocoa.framework */,
 			);
 			name = Frameworks;
@@ -160,6 +176,7 @@
 				58A0144C22F42C7C006AF493 /* Sources */,
 				58A0144D22F42C7C006AF493 /* Frameworks */,
 				58A0144E22F42C7C006AF493 /* Resources */,
+				7650C4B026A086FA00E4BC3B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
